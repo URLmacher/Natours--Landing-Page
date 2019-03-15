@@ -12,17 +12,25 @@
 .section-features{
    
     padding:15rem 25rem 25rem 15rem;
+    background-image:-webkit-gradient(
+        linear,
+        left top, right bottom,
+        from($color-primary-light),
+        to($color-primary-dark)),
+        url(../img/feature.jpg);
     background-image:linear-gradient(
         to right bottom,
         $color-primary-light,
         $color-primary-dark),
         url(../img/feature.jpg);
         background-size: cover;
-    transform:skewY(-7deg);
+    -webkit-transform:skewY(-7deg);
+            transform:skewY(-7deg);
      margin-top: -20rem;
 
     & > * {
-        transform:skewY(7deg);
+        -webkit-transform:skewY(7deg);
+                transform:skewY(7deg);
     }
 
     @include respond(tab-land) {
@@ -50,6 +58,11 @@
 }
 .section-book{
     padding:15rem 0;
+    background-image:-webkit-gradient(
+        linear,
+        left top, right bottom,
+        from($color-primary-light),
+        to($color-primary-dark));
     background-image:linear-gradient(
         to right bottom,
         $color-primary-light,
@@ -65,7 +78,8 @@
     background-size: 100%;
     // height:50rem;
     border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba($color-grey-dark-2, .2);
+    -webkit-box-shadow: 0 1.5rem 4rem rgba($color-grey-dark-2, .2);
+            box-shadow: 0 1.5rem 4rem rgba($color-grey-dark-2, .2);
 
     @include respond(tab-land) {
         background-image: 
@@ -77,6 +91,12 @@
         background-size: cover;
     }
     @include respond(tab-port) {
+        background-image: 
+        -webkit-gradient(linear,
+        left top, right top,
+        from(rgba($color-white-light,.9)),
+        to(rgba($color-white-light,.9))),
+        url(../img/book.jpg);
         background-image: 
         linear-gradient(to right,
         rgba($color-white-light,.9)0%,

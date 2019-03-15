@@ -1,6 +1,12 @@
 .header{
     position: relative;
     height:95vh;
+    background-image:-webkit-gradient(
+    linear,
+    left top, right bottom,
+    from($color-primary-light),
+    to($color-primary-dark)),
+    url(../img/hero-med.jpg);
     background-image:linear-gradient(
     to right bottom,
     $color-primary-light,
@@ -11,7 +17,13 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
-    @media (min-resolution:192dpi) and (min-width:37.5em),(min-width:125em){ 
+    @media (-webkit-min-device-pixel-ratio:2) and (min-width:37.5em),(min-resolution:192dpi) and (min-width:37.5em),(min-width:125em){ 
+        background-image:-webkit-gradient(
+        linear,
+        left top, right bottom,
+        from($color-primary-light),
+        to($color-primary-dark)),
+        url(../img/hero-large.jpg); 
         background-image:linear-gradient(
         to right bottom,
         $color-primary-light,
@@ -36,7 +48,8 @@
         position: absolute;
         left:50%;
         top:50%;
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
         text-align: center;
     }
 }
