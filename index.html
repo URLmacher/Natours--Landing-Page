@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
@@ -12,6 +13,32 @@
     <title>Natours</title>
 </head>
 <body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon"></span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link"><span>01</span>Über das</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link"><span>02</span>Ihre Freude</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link"><span>03</span>Popoläres</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link"><span>04</span>Märchen</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link"><span>05</span>ansuchen</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
     <header class="header">
         <div class="header__logo-box">
             <img src="img\UNESCO_logo_white.png" alt="Logo" class="header__logo" />
@@ -24,5 +51,363 @@
             <a href="#" class="btn btn--white btn--animated">Hello</a>
         </div>
     </header>
+    <main>
+        <section class="section-about">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Spass und Freude für coole Leute
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <h3 class="heading-tertiary u-margin-bottom-small">Es gibt verschiedene Dinge</h3>
+                    <p class="paragraph">
+                        Das Denkmal der Gattenzärtlichkeit und Volksliebe war ein Obelisk, der 1796 zur Feier der Genesung des württembergischen Herzogs Friedrich Eugen von einer lebensgefährlichen Erkrankung auf einer Rasenanhöhe auf der Planie in Stuttgart errichtet wurde.
+                    </p>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Lauter Geschichten sich zu erzählen</h3>
+                    <p class="paragraph">
+                        Als Spiegelfechter werden männliche Vögel bezeichnet, die insbesondere während der Brutzeit mit dem Schnabel gegen Scheiben oder Spiegel klopfen und damit ihr Spiegelbild als vermeintlichen Rivalen bekämpfen.
+                    </p>
+                    <a href="#" class="btn-text">Mehr lernen &rarr;</a>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="composition">
+                        <img srcset="img\min-natur-1min.jpg 640w, img\min-natur-1.jpg 1280w" 
+                        sizes="(max-width:56.25em) 20vw, (max-width:37.5em) 30vw, 300px"
+                        alt="Photo 1" class="composition__photo composition__photo--p1"
+                        src="img\min-natur-1.jpg">
+                        <img srcset="img\min-natur-2min.jpg 640w, img\min-natur-2.jpg 1280w" 
+                        sizes="(max-width:56.25em) 20vw, (max-width:37.5em) 30vw, 300px"
+                        alt="Photo 2" class="composition__photo composition__photo--p2"
+                        src="img\min-natur-2.jpg">
+                        <img srcset="img\min-natur-3min.jpg 640w, img\min-natur-3.jpg 1280w" 
+                        sizes="(max-width:56.25em) 20vw, (max-width:37.5em) 30vw, 300px"
+                        alt="Photo 3" class="composition__photo composition__photo--p3"
+                        src="img\min-natur-3.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-features">
+            <div class="row">
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-world"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Urkunde die Welt</h3>
+                        <p class="feature-box__text">
+                            Schloss Wackerbarth ist ein von Wein­bergen umge­benes Barock­schloss im Rade­beuler Stadt­teil Nieder­lößnitz an der Straße nach Meißen, das als Sitz des Sächsi­schen Staats­wein­gutes dient.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-compass"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Fleisch ist Leben</h3>
+                        <p class="feature-box__text">
+                            Das histori­sche Areal des Schlos­ses bildet einen Ausläu­fer des ober­halb davon gelege­nen Landschafts­schutz­gebiets Lößnitz. Schloss Wacker­barth als sächsi­sches Kultur­erbe gehört zur Landes­koopera­tion Schlösser­land Sachsen.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-map"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Brot mit Kot</h3>
+                        <p class="feature-box__text">
+                            Seit der Anlage als Alters­land­sitz von General­feld­marschall und Reichs­graf August Christoph von Wacker­barth und bis zur Grün­dung von Nieder­lößnitz.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-heart"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Telefon leg auf</h3>
+                        <p class="feature-box__text">
+                            Heutzu­tage steht das freistaat­liche Wein­gut, beste­hend aus der histori­schen Anlage und dem moder­nen Neubau der Wein- und Sekt-Manu­faktur, dem Publi­kum zur Besichti­gung offen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>   
+        <section class="section-tours">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    für kind und kegel
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--1" ></div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--1">
+                                    Würstel mit Senf
+                                </span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>Hund Mund Gsund</li>
+                                    <li>Berg am Werk</li>
+                                    <li>Kartoffel Pantoffel</li>
+                                    <li>Hecktisch</li>
+                                    <li>übern Ecktisch</li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back--1">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">NUR</p>
+                                    <p class="card__price-value">€187</p>
+                                </div>
+                                <a href="#popup" class="btn btn--white">Jetzt buchen!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--2" ></div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--2">
+                                    Pepperoni Pizza mit Ei
+                                </span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>Sapperlott</li>
+                                    <li>am Schafott</li>
+                                    <li>Ich bin froh</li>
+                                    <li>geh aufs Klo</li>
+                                    <li>Mandelkern</li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back--2">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">NUR</p>
+                                    <p class="card__price-value">€297</p>
+                                </div>
+                                <a href="#popup" class="btn btn--white">Jetzt buchen!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--3" ></div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--3">
+                                    Kartoffeln und Leberkäs
+                                </span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>Pferd am Herd</li>
+                                    <li>Maus im Haus</li>
+                                    <li>Biscotti</li>
+                                    <li>Müslie</li>
+                                    <li>Rispen</li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back--3">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">NUR</p>
+                                    <p class="card__price-value">€417</p>
+                                </div>
+                                <a href="#popup" class="btn btn--white">Jetzt buchen!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="u-center-text u-margin-top-huge">
+                <a href="#" class="btn btn--green">Finden Sie alle Dinge</a>
+            </div>
+        </section> 
+        <section class="section-stories">
+            <div class="bg-video">
+                <video  class="bg-video__content" autoplay muted loop> 
+                    <source src="img/video.mp4" type="video/mp4">
+                    <source src="img/video.webm" type="video/webm">
+                </video>
+            </div>
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Die Leute reden schon
+                </h2>
+            </div>
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img  class="story__image" src="img\face1.jpg" alt="Gesicht">
+                        <figcaption class="story__caption">
+                            Henrike Maier
+                        </figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Im Winter ist es kalt</h3>
+                        <p>Absinth, auf­grund seiner Farbe auch „Die grüne Fee“ ge­nannt, ist ein hoch­prozenti­ges alkoho­lisches Getränk, das tradi­tionell aus Wer­mut, Anis, Fenchel sowie einer je nach Rezep­tur unter­schied­lichen Reihe weite­rer Kräu­ter herge­stellt wird und zu den Bitter­spiritu­osen ge­zählt wird.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img  class="story__image" src="img\face2.jpg" alt="Gesicht">
+                        <figcaption class="story__caption">
+                            Helmut Berger
+                        </figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Soletti helfen bei Durchfall</h3>
+                        <p>Die Donau ist eine der ältesten und bedeutendsten europäischen Handelsrouten. Bereits in frühgeschichtlicher Zeit diente sie als Transportweg für Handelswaren wie zum Beispiel Pelze, die meist noch mit einfachen Flößen den Fluss entlang transportiert wurden.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="u-center-text u-margin-top-huge">
+                <a href="#" class="btn btn--white">Kommen Sie bitte </a>
+            </div>
+        </section>
+        <section class="section-book">
+            <div class="row">
+                <div class="book">
+                    <div class="book__form">
+                        <form class="form" action="#">
+                                <div class=" u-margin-bottom-medium">
+                                    <h2 class="heading-secondary">
+                                        Buchen nun
+                                    </h2>
+                                </div>
+                            <div class="form__group ">
+                                <input type="text" class="form__input" placeholder='Voller Name' id="name" required />
+                                <label for="name" class="form__label">Voller Name</label>
+                            </div>
+                            <div class="form__group ">
+                                <input type="email" class="form__input" placeholder='Email Adresse' id="email" required />
+                                <label for="email" class="form__label">Email Adresse</label>
+                            </div>
+                            <div class="form__group">
+                                <div class="form__radio-group u-margin-bottom-small">
+                                    <input name="size" type="radio" class="form__radio-input" id='small' />
+                                    <label for="small" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Gebäck
+                                    </label>
+                                </div>
+                                <div class="form__radio-group">
+                                    <input name="size" type="radio" class="form__radio-input" id='big' />
+                                    <label for="big" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Gepäck
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__group">
+                                <button class="btn btn--green">feuer &rarr;</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section> 
+    </main>
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <picture >
+                <source srcset="img\logo-small.png 1x, img\UNESCO_logo_white.png 2x" media="(max-width:37.5em)">
+                <img class="footer__logo"  srcset="img\logo-small.png 1x, img\UNESCO_logo_white.png 2x" alt="Full Logo" src="img\UNESCO_logo_white.png" />    
+            </picture>
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Betrieb</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Kontakt</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Arbeitsplatz</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Cookies</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Anweisungen</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    Erwirkt vom niederen Knilch <a href="#" class="footer__link">Patrick</a> zum erlernen und erproben von 
+                    <a href="#" class="footer__link">Internetzeugs</a>. Cappyright &copy; 2019
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="img\popup1.jpg" alt="Naturtour" class="popup__img" />
+                <img src="img\popup2.jpg" alt="Naturtour" class="popup__img" />
+            </div>
+            <div class="popup__right" >
+                <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-small">Jetzt loslegen</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">Wichtig &ndash; Lesen Sie die Gesetze</h3>
+                <p class="popup__text">
+                    Die Fraktur­sono­grafie ist ein speziel­les Anwen­dungs­gebiet der medizi­nischen Ultraschall­diagnos­tik (Sono­grafie) zum Nach­weis von Knochen­brüchen (Fraktu­ren). Daneben exis­tieren noch wei­tere Anwen­dungen der Knochen­sono­grafie, so zur Kallus­darstel­lung und in der Osteo­porose­diagnos­tik. Die Sono­grafie selbst ist ein weit verbrei­tetes und nahe­zu neben­wirkungs­freies Dia­gnose­verfa­hren, das von einem Groß­teil der Ärzte und Klini­ken ange­wendet wird. Das Einsatz­gebiet reicht von der Vor­sorge über die Akut­diagnos­tik bis zur Nachbe­handlung. Seit der Einfüh­rung des medizi­nischen Ultra­schalls in den 1950er Jahren wurde die Tech­nik zur Beurtei­lung von Weich­teilen wie Haut, Orga­nen und Gefäßen ge­nutzt. Die inten­sive For­schung seit 2005 erlaubte ab 2009 auch den siche­ren Ein­satz der Fraktur­sono­grafie zur Darstel­lung von bestimm­ten Knochen­brüchen (unter ande­rem Hand­gelenk, Ellen­bogen, Ober­arm) bei Kindern im Alter bis zu zwölf Jahren und zur Verlaufs­beurtei­lung. Da­durch kann im Wachs­tums­alter die Strahlen­belas­tung durch die sonst übliche Röntgen­diagnos­tik redu­ziert werden. 
+                </p>
+                <a href="#" class="btn btn--green">Ab gehts</a> 
+            </div>
+        </div>
+    </div>
+    <!-- <section class="grid-test">
+        <div class="row">
+            <div class="col-1-of-2">
+                col 1 of 2
+            </div>
+            <div class="col-1-of-2">
+                col 1 of 2
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-of-3">
+                col 1 of 3
+            </div>
+            <div class="col-1-of-3">
+                col 1 of 3
+            </div>
+            <div class="col-1-of-3">
+                col 1 of 3
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-of-3">
+                col 1 of 3
+            </div>
+            <div class="col-2-of-3">
+                col 2 of 3
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-of-4">
+                col 1 of 4
+            </div>
+            <div class="col-1-of-4">
+                col 1 of 4
+            </div>
+            <div class="col-2-of-4">
+                col 2 of 4
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-of-4">
+                col 1 of 4
+            </div>
+            <div class="col-3-of-4">
+                col 3 of 4
+            </div>
+        </div>
+    </section> -->
 </body>
 </html>
